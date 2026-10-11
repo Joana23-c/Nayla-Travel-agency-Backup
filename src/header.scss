@@ -1,0 +1,116 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  z-index: 999;
+
+    background: #22222222;
+  backdrop-filter: blur(20px);
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: yellow;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.navBar__logo img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.menu {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+a {
+  //   color: white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.btnList {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.menu__list li a {
+  font-family: "Cormorant Garamond", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding: 10px;
+}
+
+.btnList i{
+  color: white;
+}
+.menu__list li a:hover {
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 10px;
+}
+.menu__list li a:active {
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 10px;
+}
+
+.btnList li:not(:last-child) a {
+  font-family: "Cormorant Garamond", Sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  padding: 10px;
+}
+
+.btnList li:not(:last-child) a:hover {
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 10px;
+}
+.btnList li:not(:last-child) a:active {
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 10px;
+}
+.btnList img {
+  height: 20px;
+}
+.btnList li:last-child a {
+  height: 20px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.btnList li:last-child a:hover {
+  background-color: rgba(255, 255, 255, 0.227);
+  border-radius: 10px;
+}
+.togglebtn{
+    display : none;
+}
+
+.togglebtn img{
+    height : 30px;
+    width : 35px;
+}
+
+@media(max-width : 768px){
+    .togglebtn{
+    display : block;
+}
+.menu, .navBar__btns{
+    display: none;
+}
+
+}

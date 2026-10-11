@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  // background-image: url("castle.jpg");
+    // background-image: url("402d87e6-8154-4dce-a348-40b9111153ed.png");
+    background-image: url("39855e18-2801-497a-b9a0-eb5e2e41204a.png");
+    // background-image: url("b32cb408-644f-49c9-8562-cbb424226487.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  height: 700px;
+}
+.hero-overlay {
+  // background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.396);
+  //   background-image:
+  //  linear-gradient(
+  //     90deg,
+  //     rgba(20, 27, 42, 0.55) 0%,
+  //     rgba(32, 37, 50, 0.38) 50%,
+  //     rgba(25, 30, 43, 0.48) 100%
+  //   );
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subtitle {
+  font-family: "Allura", cursive;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  color: white;
+  text-align: center;
+}
+.title {
+  font-family: "Cormorant Garamond", Sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  // line-height: 35px;
+  color: white;
+  text-align: center;
+}
+.subdesc {
+  font-family: "Cormorant Garamond", Sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  // line-height: 35px;
+  color: white;
+  text-align: center;
+  max-width: 70%;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-family: "Cormorant Garamond", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background: none;
+  border: 1px solid #c9a86a;
+  color: white;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .hero-overlay {
+    padding: 0 40px;
+  }
+  .hero {
+    background-position: left center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 0 20px;
+  }
+  .hero {
+    background-position: left center;
+  }
+  .title,
+  .subdesc {
+    display: none;
+  }
+  // .btn{
+  //     display : none;
+  // }
+
+  .heroContent {
+    gap: 10px;
+  }
+
+}

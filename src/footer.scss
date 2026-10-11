@@ -1,0 +1,102 @@
+.footer-wrapper {
+  width: 100%;
+  background-color: #24354b;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  width: 1280px;
+  padding-top: 72px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-around;
+//   align-items : center ;
+
+  &__aboutus {
+    max-width: 35%;
+  }
+
+  &__title {
+    font-family: "Corben", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    color: white;
+    word-spacing: 2px;
+    text-align: start;
+    margin: 10px 0;
+  }
+  &__logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  &__item a {
+    color: white;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+  &__item{
+    margin : 5px 0 ;
+  }
+
+  &__link i{
+    margin-right : 10px;
+  }
+
+}
+  .cont {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+    color: white;
+    word-spacing: 2px;
+    text-align: justify;
+  }
+@media(max-width:1024px){
+    .footer{
+        justify-content : space-between;
+    
+     &__aboutus {
+    max-width: 40%;
+  }}
+}
+@media(max-width:768px){
+    .footer{
+        flex-direction : column;
+        justify-content : space-between;
+        max-width : 90%;
+        row-gap: 20px;
+          padding-left: 20px;
+  padding-right: 20px;
+    
+     &__aboutus {
+    max-width: 100%;
+  }
+  &__logo {
+    display:flex;
+    justify-content : center;
+  }
+  &__title{
+    text-align:center;
+    margin-bottom : 15px;
+  }
+  &__nav{
+    text-align : center;
+  }
+
+  &__item{
+    text-align : center
+  }
+
+}
+.cont{
+    text-align : center;
+}
+}

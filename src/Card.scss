@@ -1,0 +1,142 @@
+.card {
+//   background: pink;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid rgba(180, 140, 80, 0.12);
+  box-shadow: 0 10px 35px rgba(20, 40, 60, 0.09);
+  overflow: hidden;
+  &__Img {
+    min-height: 200px;
+    width: 100%;
+    // background-image: url("/Nayla-Travel-agency/corfu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+  }
+}
+.discount{
+    position : absolute;
+     right : 20px;
+     top : 20px;
+     background-color: #c9a86a;
+     padding : 8px 15px;
+     border-radius : 30px;
+}
+.dicount p{
+    color : white;
+    font-family: "Corben", sans-serif;
+    font-size: 17px;
+    line-height : 20px;
+    letter-spacing : 1px;
+    text-align : center;
+}
+.card__content{
+    padding : 15px;
+}
+.content-wrapper{
+    display:flex;
+    direction : row;
+    justify-content : space-between;  
+    column-gap:5px;
+}
+
+.card-txt{
+    width: 73%;
+}
+.location{
+font-family: "Cormorant Garamond", Sans-serif;
+text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  // line-height: 35px;
+  color: #24354b;
+  letter-spacing : 1px;
+}
+
+.card-title{
+    font-family: "Cormorant Garamond", Sans-serif;
+    text-transform: capitalize;
+    font-size: 28px;
+  font-weight: 600;
+  // line-height: 35px;
+  color: #222;
+  margin-bottom : 10px
+}
+
+.card-description{
+font-family: "Cormorant Garamond", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2e2c2c;
+  margin-bottom: 10px;
+  text-align : left ;
+}
+
+.card-price{
+    padding-top: 20px;
+}
+
+.prior-price{
+    // color : gray;
+    font-family: "Corben", sans-serif;
+    font-size: 16px;
+    color: #a0a0a0;
+     text-decoration: line-through;
+    text-decoration-thickness: 2px;
+  text-decoration-color: #a0a0a0dc;
+  text-align : end;
+}
+.price{
+    font-family: "Corben", sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight : 600px;
+    color: #c9a86a;
+}
+.end-infos{
+    display : flex;
+    flex-direction : row; 
+    justify-content : space-between;
+    // margin-top :5px; 
+    align-items : center;
+}
+.days p{
+ font-family: "Corben", Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #221f34af;
+}
+
+.card-btn{
+    font-family: "Cormorant Garamond", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  border: none;
+  background-color: #24354b
+;
+  padding : 10px 15px;
+  border-radius : 30px;
+//   margin-bottom: 10px;
+}
+@media(max-width : 768px){
+    .content-wrapper{
+        flex-direction : column;
+    }
+    .card-txt{
+    width:100%;
+}
+.card-price{
+    padding-top : 0px;
+    display : flex;
+    gap : 10px;
+}
+.end-infos{
+    display : none;
+}
+}
